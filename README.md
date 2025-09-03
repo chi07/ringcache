@@ -4,7 +4,7 @@
 [![codecov](https://codecov.io/gh/chi07/ringcache/branch/main/graph/badge.svg)](https://codecov.io/gh/chi07/ringcache)
 [![CI](https://github.com/chi07/ringcache/actions/workflows/ci.yml/badge.svg)](https://github.com/chi07/ringcache/actions/workflows/ci.yml)
 
-**RingCache** is a **thread-safe circular buffer (ring buffer) cache** with a fixed capacity.  
+**RingCache** is a **thread-safe circular buffer (ring buffer) cache** with a fixed capacity inspired by original [RingCache](https://github.com/hadv/ringcache) by HaDV.
 It stores `(key, value)` pairs up to a predefined limit. When the cache is full, the oldest entry is overwritten (evicted).  
 You can attach an `EvictCallback` to get notified whenever an item is evicted.
 
